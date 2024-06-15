@@ -47,6 +47,11 @@ class TimerState extends ChangeNotifier {
     notifyListeners();
   }
 
+  void setStartSeconds(int seconds) {
+    startSeconds = seconds;
+    notifyListeners();
+  }
+
   void nextRound() async {
     if (!isRunning) {
       mainTimer?.cancel();
@@ -114,6 +119,36 @@ class MyHomePage extends StatelessWidget {
               onPressed: timerState.toggleRunning,
               child: Text(timerState.isRunning ? 'Pause' : 'Resume'),
             ),
+            SizedBox.fromSize(
+              size: const Size.fromHeight(15.0),
+            ),
+            TextButton(
+              style: TextButton.styleFrom(
+                  foregroundColor: theme.colorScheme.secondary),
+              onPressed: () {
+                showTimePicker(
+                  context: context,
+                  initialTime: const TimeOfDay(hour: 5, minute: 0),
+                  initialEntryMode: TimePickerEntryMode.inputOnly,
+                  hourLabelText: 'Minutes',
+                  minuteLabelText: 'Seconds',
+                  helpText: 'Enter new starting time',
+                  builder: (BuildContext context, Widget? child) {
+                    return MediaQuery(
+                      data: MediaQuery.of(context)
+                          .copyWith(alwaysUse24HourFormat: true),
+                      child: child!,
+                    );
+                  },
+                ).then((newTime) {
+                  if (newTime != null) {
+                    timerState
+                        .setStartSeconds(newTime.hour * 60 + newTime.minute);
+                  }
+                });
+              },
+              child: const Text('Change starting time'),
+            )
           ],
         ),
       ),
