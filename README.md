@@ -1,16 +1,25 @@
-# skao_timer_gui
+# SKAO Timer
 
-A new Flutter project.
+## Description
+I was organizing an astronomy examination camp that required the staff, including
+myself, to time each round of the exam and notify the participants when the time started,
+when there was one minute left, and when the time was up. I initially built a
+[simple CLI timer](https://github.com/polya2005/SKAO-timer)
+that automates each round's process; hence, the timekeeper only needed to type a command to start
+each round. I chose CLI because I needed to complete the program in 1 day.
 
-## Getting Started
+For next years' editions of the camp, however, I made this nicer GUI version
+for easier operation and aesthetic pleasure. This time, I used Flutter because of its
+simplicity, cross-platform compatibility, and its beautiful material 3 theme. Note that the
+notification sound is in Thai as the examination is for Thai students.
 
-This project is a starting point for a Flutter application.
+## Installation
 
-A few resources to get you started if this is your first Flutter project:
+Coming soon...
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usage
+- The default starting time for each round is 5 minutes. You can change it by clicking on
+  "Change starting time" and then enter the desired amount of time.
+- Simply click on the "Next round" button to start the next round. You cannot start the next
+  round when the timer is running.
+- Use the Pause/Resume button to pause and resume the timer.
