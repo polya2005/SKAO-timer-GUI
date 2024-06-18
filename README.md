@@ -17,7 +17,7 @@ notification sound is in Thai as the examination is for Thai students.
 
 |OS|Distribution|Download Link|CPU/Architecture|
 |---|---|---|---|
-|macOS|`.app`||Apple Silicon & Intel|
+|macOS|`.app`|[Link](https://github.com/polya2005/SKAO-timer-GUI/releases/download/v1.0.0/skao_timer_gui.app.zip)|Apple Silicon & Intel|
 
 ## Usage
 - The default starting time for each round is 5 minutes. You can change it by clicking on
