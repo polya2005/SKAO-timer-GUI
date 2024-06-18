@@ -15,7 +15,9 @@ notification sound is in Thai as the examination is for Thai students.
 
 ## Installation
 
-Coming soon...
+|OS|Distribution|Download Link|CPU/Architecture|
+|---|---|---|---|
+|macOS|`.app`||Apple Silicon & Intel|
 
 ## Usage
 - The default starting time for each round is 5 minutes. You can change it by clicking on
