@@ -1,5 +1,7 @@
 name: skao_timer_gui
-description: "A new Flutter project."
+description: "I was organizing an astronomy examination camp that required the staff, including myself, to time each round of the exam and notify the participants when the time started, when there was one minute left, and when the time was up. I initially built a simple CLI timer that automates each round's process; hence, the timekeeper only needed to type a command to start each round. I chose CLI because I needed to complete the program in 1 day.
+
+For next years' editions of the camp, however, I made this nicer GUI version for easier operation and aesthetic pleasure. This time, I used Flutter because of its simplicity, cross-platform compatibility, and its beautiful material 3 theme. Note that the notification sound is in Thai as the examination is for Thai students."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
@@ -36,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   audioplayers: ^5.2.1
   provider: ^6.1.1
+  package_info_plus: ^5.0.1
 
 dev_dependencies:
   flutter_test:
